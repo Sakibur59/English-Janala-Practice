@@ -16,7 +16,15 @@ const displayWord = (words) => {
   const wordContainer = document.getElementById("word-container");
   wordContainer.innerHTML=""
 
-  
+  if(words.length === 0){
+    wordContainer.innerHTML=`
+    <div class="text-center bg-sky-100 col-span-full rounded-xl py-10 space-y-6">
+        <img class="mx-auto" src="./assets/alert-error.png" />
+        <p class="text-xl font-medium text-gray-400">Ai lesson a kono vocabulary add kora hoi ni</p>
+        <h2 class="text-4xl font-bold">Move to next lesson</h2>
+      </div>
+    `
+  }
    words.forEach((word) => {
     const wordDiv = document.createElement("div");
     wordDiv.innerHTML = `
