@@ -16,6 +16,7 @@ const displayWord = (words) => {
   const wordContainer = document.getElementById("word-container");
   wordContainer.innerHTML=""
 
+  
    words.forEach((word) => {
     const wordDiv = document.createElement("div");
     wordDiv.innerHTML = `
