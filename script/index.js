@@ -71,4 +71,6 @@ const displayLesson = (lesson) => {
   }
 };
 
-loadData()
+loadData();
+
+
